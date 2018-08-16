@@ -1,54 +1,73 @@
-/* IE8 Template Styles & Fixes */
+/*
+	Phantom by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
-/* Polyfill for full-scale background images in IE */
-#hero,
-#fallback,
-.element-img,
-#featured .featured-item,
-.overview-img,
-#page-header {
-	background-size: cover;
-	-ms-behavior: url(includes/backgroundsize.min.htc);
-	behavior: url(includes/backgroundsize.min.htc);
-}
-.wow {
-	visibility: visible !important;
-}
+/* Form */
 
-#page-header {
-	width: 100%
-}
+	form .field {
+		float: none !important;
+		width: 100% !important;
+		padding-left: 0 !important;
+	}
 
-html.sb-init.sb-active.sb-active-right,
-html.sb-init.sb-active.sb-active-right #featured a,
-html.sb-init.sb-active.sb-active-right ul.filters li p,
-html.sb-init.sb-active.sb-active-right #projects .projects .label-text h3 a {
-	cursor: default;
-}
-/* For further info on how to select rgba compatible values for IE8, see > http://css-tricks.com/rgba-browser-support/ */
-.navbar-inner.lightnav-alt,
-#blog-post .navbar-inner { 
-	background:transparent;
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6FFFFFF,endColorstr=#E6FFFFFF); 
-	zoom: 1;
-}
-#featured a.meta {
-	background:transparent;
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000); 
-	zoom: 1;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-#featured a.meta:hover {
-	background:transparent;
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3000000,endColorstr=#B3000000); 
-	zoom: 1;
-}
-.map-cover {
-	background:transparent;
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3131313,endColorstr=#B3131313); 
-	zoom: 1;
-}
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		border: solid 2px #585858 !important;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			border-color: #f2849e !important;
+		}
+
+		input[type="submit"].special,
+		input[type="reset"].special,
+		input[type="button"].special,
+		button.special,
+		.button.special {
+			border: none !important;
+		}
+
+/* Tiles */
+
+	.tiles article > .image:before, .tiles article > .image:after {
+		display: none;
+	}
+
+/* Header */
+
+	#header .logo .symbol {
+		display: none;
+	}
+
+	#header nav ul li a[href="#menu"] {
+		text-indent: 0;
+		width: auto;
+		font-size: 0.8em;
+	}
+
+		#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
+			display: none;
+		}
+
+/* Footer */
+
+	#footer > .inner section {
+		width: 50%;
+		margin-left: 3em;
+	}
+
+		#footer > .inner section:first-child {
+			margin-left: 0;
+			width: 40%;
+		}
